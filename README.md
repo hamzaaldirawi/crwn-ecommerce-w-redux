@@ -11,3 +11,5 @@
 	```
 	npm install node-sass --save-dev
 	```
+
+  - Create Directory, Collection, Shop, Menu Item Component
