@@ -8,7 +8,7 @@ const SHOP_DATA = [
             id: 1,
             name: 'Brown Brim',
             // imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-            imageUrl: "/images/shop-img/hats/brown-brim.png",
+            imageUrl: "images/shop-img/hats/brown-brim.png",
             price: 25
           },
           {
@@ -78,7 +78,7 @@ const SHOP_DATA = [
             id: 10,
             name: 'Adidas NMD',
             // imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-            imageUrl: "/images/shop-img/sneakers/adidas-nmd.png", 
+            imageUrl: "images/shop-img/sneakers/adidas-nmd.png", 
             price: 220
           },
           {

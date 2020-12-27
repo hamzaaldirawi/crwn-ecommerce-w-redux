@@ -1,8 +1,9 @@
 import { withRouter } from 'react-router-dom';
+import supportsWebP from 'supports-webp';
 import './menu-item.styles.scss';
 
 
-const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => (
+const MenuItem = ({ title, imageUrl, webpUrl, size, history, match, linkUrl }) => (
     
     <div 
     className = {`${size} menu-item`} 
@@ -11,7 +12,7 @@ const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => (
         <div
             className = 'background-image' 
             style = {{
-                backgroundImage: `url(${imageUrl})`
+                backgroundImage: `url(${supportsWebP ? webpUrl : imageUrl})`
             }}
         >
         </div>
@@ -23,3 +24,12 @@ const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => (
 );
 
 export default withRouter(MenuItem);
+
+supportsWebP.then(supported => {
+    if (supported) {
+        console.log('Load WebP!')
+    } else {
+        console.log('Load JPEG!')
+    }
+})
+

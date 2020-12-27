@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "firebase": "^8.2.1",
     "node-sass": "^4.14.1",
     "react-router-dom": "^5.2.0",
     "supports-webp": "^2.0.1"
