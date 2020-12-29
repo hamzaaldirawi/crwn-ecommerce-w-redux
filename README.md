@@ -29,9 +29,13 @@
 	```
 	npm install --save-dev redux react-redux redux-logger
 	```
-  - Create User with redux using:	
+  - Implement userReducer and userActions to header and app component:	
 	- Store
 	- Connect
 	- Logger
 	- Provider 
+
+  - Update our app to redirect to home page if user is signed in
+
+  
 
