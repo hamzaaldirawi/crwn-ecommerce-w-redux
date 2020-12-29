@@ -24,12 +24,3 @@ const MenuItem = ({ title, imageUrl, webpUrl, size, history, match, linkUrl }) =
 );
 
 export default withRouter(MenuItem);
-
-supportsWebP.then(supported => {
-    if (supported) {
-        console.log('Load WebP!')
-    } else {
-        console.log('Load JPEG!')
-    }
-})
-
