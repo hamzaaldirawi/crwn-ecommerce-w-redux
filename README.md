@@ -37,5 +37,6 @@
 
   - Update our app to redirect to home page if user is signed in
 
+  - Added cartIcon and cartDropdown components
   
 
