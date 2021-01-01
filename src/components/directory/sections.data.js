@@ -5,6 +5,7 @@ const SECTIONS_DATA = [
         title: 'hats',
         webpUrl: '/images/hats.webp',
         imageUrl: '/images/hats.png', 
+        id: 1,
         linkUrl: 'shop/hats'
 
     },
