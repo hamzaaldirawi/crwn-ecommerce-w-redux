@@ -21,9 +21,9 @@
 	
   - Setup firebase utils and paste config code to src 
   
-  - Integreated firebase into app, created sign in page with sign in with Google
+  - Integreate firebase into app, created sign in page with sign in with Google
   
-  - Implemented firebase utils, included ability to store authenticated user
+  - Implement firebase utils, included ability to store authenticated user
 
   - Install Redux, React Redux, Redux Logger using: 
 	```
@@ -37,10 +37,12 @@
 
   - Update our app to redirect to home page if user is signed in
 
-  - Added cartIcon and cartDropdown components
+  - Add cartIcon and cartDropdown components
 
   - Implement Cart reducer to Cart Components 
 
-  - Updated cart utils to group items in cart reducer
+  - Update cart utils to group items in cart reducer
+
+  - Create Cart item component and connect cart dropdown with cartItems reducer
   
 
