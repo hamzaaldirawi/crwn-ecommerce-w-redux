@@ -51,5 +51,7 @@
 		npm install reselect --save-dev
 		```
 
-  
+  - Update our mapStateToProps using createStructuredSelector from reselect in the whole app
+	>> Using createStructuredSelector is good, because in future it may help if we decided to grow our app.
+	
 

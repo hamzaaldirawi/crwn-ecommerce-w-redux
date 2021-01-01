@@ -2,6 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'; 
+import { createStructuredSelector } from 'reselect';
 
 import HomePage from './pages/homepage/hompage.component';
 import ShopPage from './components/shop/shop.component.jsx';
@@ -9,6 +10,8 @@ import Header from './components/header/header.component';
 import SignInSignOut from './pages/sign-in-sign-up/sign-in-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user-actions'; 
+import { selectCurrentUser } from './redux/user/user-selectors';
+
 
 class App extends Component {
 
@@ -59,8 +62,8 @@ class App extends Component {
 } 
 
 // To redirect user when sign in
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({
