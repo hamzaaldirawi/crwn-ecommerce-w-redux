@@ -44,5 +44,12 @@
   - Update cart utils to group items in cart reducer
 
   - Create Cart item component and connect cart dropdown with cartItems reducer
+
+  - Update the app with reselect, replace cart selectors with memoized selectors
+	install selector to the project :
+		```
+		npm install reselect --save-dev
+		```
+
   
 
