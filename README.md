@@ -54,4 +54,4 @@
   - Update our mapStateToProps using createStructuredSelector from reselect in the whole app
 	>> Using createStructuredSelector is good, because in future it may help if we decided to grow our app.
 	
-
+  - Add checkout page, checkout item component and update cart to use selectors
