@@ -1,8 +1,30 @@
 import { combineReducers } from 'redux';
+import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+//To get actual local storage object in our window browser
+// you can chose sessionStorage insted of storage but from dif lib
+
 import userReducer from './user/user-reducer';
 import cartReducer from './cart/cart-reducer';
 
-export default combineReducers({
-    user: userReducer,
+const persistConfig = {
+    key: 'root',
+    storage,
+    whitelise: ['cart'] // array contain the reducer we want to storage 
+}
+
+const rootReducer = combineReducers({
+    user: userReducer, // persist by firebase so no need to persist it.
     cart: cartReducer
 });
+
+/*
+// we const rootReducer instead of export 
+// to export persistReducer
+export default combineReducers({
+    user: userReducer, // persist by firebase so no need to persist it.
+    cart: cartReducer
+});
+*/ 
+
+export default persistReducer(persistConfig, rootReducer )

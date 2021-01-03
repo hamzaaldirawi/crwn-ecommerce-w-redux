@@ -57,3 +57,9 @@
   - Add checkout page, checkout item component and update cart to use selectors
 
   - Add addItem and removeItem functionality from checkout item component
+
+  - Install redux-persist to use localStorage or sessionStorage using: 
+		```
+		npm install redux-persist --save-dev
+		```
+  - Update store, root reducer, and index to use redux-persist to storage 'cache' cart
