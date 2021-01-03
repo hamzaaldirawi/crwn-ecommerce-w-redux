@@ -63,3 +63,5 @@
 		npm install redux-persist --save-dev
 		```
   - Update store, root reducer, and index to use redux-persist to storage 'cache' cart
+
+  - Update Directory component (state) using react-redux reducer and reselect
