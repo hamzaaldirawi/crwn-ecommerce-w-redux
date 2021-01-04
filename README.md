@@ -67,3 +67,9 @@
   - Update Directory, Shop state into react-redux reducer and reselect
 
   - Normalize Data in SHOP_DATA from array to object to avoid using find method
+
+  - Install React Stripe Checkout using:
+		```
+		npm install react-stripe-checkout --save-dev
+		```
+	

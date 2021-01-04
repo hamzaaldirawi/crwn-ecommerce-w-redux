@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
         default: 
-            return {...state};
+            return {...state}; // destructor SHOP_DATA because of error after convert it to object
     }
 };
 
