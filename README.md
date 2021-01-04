@@ -64,4 +64,6 @@
 		```
   - Update store, root reducer, and index to use redux-persist to storage 'cache' cart
 
-  - Update Directory component (state) using react-redux reducer and reselect
+  - Update Directory, Shop state into react-redux reducer and reselect
+
+  - Normalize Data in SHOP_DATA from array to object to avoid using find method
