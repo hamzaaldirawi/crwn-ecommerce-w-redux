@@ -72,4 +72,4 @@
 		```
 		npm install react-stripe-checkout --save-dev
 		```
-	
+  - Update Stripe Integration, favicon and title
