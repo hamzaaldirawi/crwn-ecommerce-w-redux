@@ -4,7 +4,7 @@
 	```
 	npx create-react-app crwn-ecommerce
 	```
-	
+
   - Create Homepage component
 
   - Install SASS using 
@@ -47,9 +47,9 @@
 
   - Update the app with reselect, replace cart selectors with memoized selectors
 	install selector to the project :
-		```
-		npm install reselect --save-dev
-		```
+	```
+	npm install reselect --save-dev
+	```
 
   - Update our mapStateToProps using createStructuredSelector from reselect in the whole app
 	>> Using createStructuredSelector is good, because in future it may help if we decided to grow our app.
@@ -59,9 +59,10 @@
   - Add addItem and removeItem functionality from checkout item component
 
   - Install redux-persist to use localStorage or sessionStorage using: 
-		```
-		npm install redux-persist --save-dev
-		```
+	```
+	npm install redux-persist --save-dev
+	```
+	
   - Update store, root reducer, and index to use redux-persist to storage 'cache' cart
 
   - Update Directory, Shop state into react-redux reducer and reselect
@@ -69,7 +70,8 @@
   - Normalize Data in SHOP_DATA from array to object to avoid using find method
 
   - Install React Stripe Checkout using:
-		```
-		npm install react-stripe-checkout --save-dev
-		```
+	```
+	npm install react-stripe-checkout --save-dev
+	```
+
   - Update Stripe Integration, favicon and title
