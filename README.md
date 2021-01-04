@@ -4,7 +4,7 @@
 	```
 	npx create-react-app crwn-ecommerce
 	```
-# Create E-Commerce using React and SASS with Redux# Create E-Commerce using React and SASS with Redux
+	
   - Create Homepage component
 
   - Install SASS using 
