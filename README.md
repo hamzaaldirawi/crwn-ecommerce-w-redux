@@ -75,3 +75,19 @@
 	```
 
   - Update Stripe Integration, favicon and title
+
+  - Install Heroku to deploy crown app online 
+
+  - Create Heroku buildpack using command:
+	```
+	heroku create $APP_NAME --buildpack mars/create-react-app
+	```
+
+  - Push it to github
+	```
+	git push heroku $BRANCH
+	```
+
+   - Authorize Domain to firebase to allow sign in and sign up
+
+   - Remove redux-logger from production env

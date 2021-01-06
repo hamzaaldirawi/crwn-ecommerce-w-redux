@@ -5,7 +5,12 @@ import { persistStore } from 'redux-persist';
 
 import rootReducer from './root-reducer';
 
-const middlewares = [logger];
+const middlewares = [];
+
+if (process.env.NODE_ENV === 'development') {
+    middlewares.push(logger);
+    // This is to hide logger console in build and show it only in develpment mode
+}
 
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
