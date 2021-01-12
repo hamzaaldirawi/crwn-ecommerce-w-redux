@@ -91,3 +91,8 @@
    - Authorize Domain to firebase to allow sign in and sign up
 
    - Remove redux-logger from production env
+
+   - Add styled-components library to the app
+	 ```
+	 npm install styled-components --save-dev
+	 ```
