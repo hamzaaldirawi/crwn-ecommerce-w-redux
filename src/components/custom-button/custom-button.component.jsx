@@ -1,3 +1,13 @@
+import { CustomButtonContainer } from './custom-button.styles'; 
+
+const CustomButton = ({children, ...props}) => (
+<CustomButtonContainer {...props}>
+{children}
+</CustomButtonContainer>
+)
+
+/*
+Before using styled component 
 import './custom-button.styles.scss';
 
 const CustomButton = ({ children,
@@ -12,5 +22,5 @@ const CustomButton = ({ children,
         {children}
     </button>
 )
-
+*/
 export default CustomButton;

@@ -96,3 +96,4 @@
 	 ```
 	 npm install styled-components --save-dev
 	 ```
+   - Convert SCSS files with Styled-Component to JSX files, but kept scss without importing 

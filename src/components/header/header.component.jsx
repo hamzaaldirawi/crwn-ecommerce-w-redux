@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { auth } from '../../firebase/firebase.utils';
 import { createStructuredSelector } from 'reselect';
-import './header.styles.scss';
+
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink, /*OptionDiv*/ } from './header.styles';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropDown from '../cart-dropdown/cart-dropdown.component';
@@ -10,25 +10,26 @@ import { selectCartHidden } from '../../redux/cart/cart-selectors';
 import { selectCurrentUser } from '../../redux/user/user-selectors';
  
 const Header = ({ currentUser, hidden}) => (
-    <div className = 'header'>
-        <Link to = '/' className = 'logo-container'>
+    <HeaderContainer>
+        <LogoContainer to = '/'>
              <Logo className = 'logo'></Logo>
-        </Link>
-        <div className = 'options'>
-            <Link className = 'option' to = '/shop'>SHOP</Link>
-            <Link className = 'option' to = '/shop'>CONTACT</Link>
+        </LogoContainer>
+        <OptionsContainer className = 'options'>
+            <OptionLink to = '/shop'>SHOP</OptionLink>
+            <OptionLink to = '/shop'>CONTACT</OptionLink>
             {
                 currentUser ? 
-                <div className='option display-name' onClick={() => auth.signOut()}>{currentUser.displayName}</div>
+                <OptionLink as = 'div' onClick={() => auth.signOut()}>{currentUser.displayName}</OptionLink>
+                // We used OptionLink as div instead of importing css in styles jsx to reduce our code
                 :
-                <Link to='/signin' className='option'>SIGN IN</Link>
+                <OptionLink to='/signin'>SIGN IN</OptionLink>
             }
             <CartIcon />
-        </div>
+        </OptionsContainer>
         {
             hidden ? null : <CartDropDown />
         }
-    </div>
+    </HeaderContainer>
 );
 /*
 const mapStateToProps = (state) => ({
