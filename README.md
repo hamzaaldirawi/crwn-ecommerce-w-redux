@@ -97,3 +97,7 @@
 	 npm install styled-components --save-dev
 	 ```
    - Convert SCSS files with Styled-Component to JSX files, but kept scss without importing 
+
+   - Add SHOP_DATA to firestore
+
+   - Add SHOP_DATA from firestore to the App and insert it to reducer 
