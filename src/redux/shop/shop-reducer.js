@@ -1,10 +1,16 @@
-import SHOP_DATA from './shop.data';
+// import SHOP_DATA from './shop.data'; // we don't need it because we fetch the data from firestroe 
 
 import ShopActionTypes from './shop.types';
 
 const INITIAL_STATE = {
+    collections: null
+};
+/*
+was like this before remove shop_data
+const INITIAL_STATE = {
     collections: SHOP_DATA
 }
+*/
 
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {

@@ -16,18 +16,33 @@ export const selectShopCollections = createSelector(
     [selectShop],
     shop => shop.collections
 );
-
+/*
 export const selectCollectionsForPreview = createSelector(
     [selectShopCollections],
     collections => Object.keys(collections).map(key => collections[key]) // to return Object to Array 
+    object.key can't hanlde null directly so we have to make if 
+)
+*/
+export const selectCollectionsForPreview = createSelector(
+    [selectShopCollections],
+    collections => collections ? Object.keys(collections).map(key => collections[key]) : [] 
 
 )
-
+/*
+because of error when we refresh shop/url because can't access collectionUrlParam becuase of null 
+so we'll solve it again with if
 export const selectCollection = collectionUrlParam =>
   createSelector(
     [selectShopCollections],
     collections => collections[collectionUrlParam]
-  );
+);
+*/
+
+export const selectCollection = collectionUrlParam =>
+  createSelector(
+    [selectShopCollections],
+    collections => collections ? collections[collectionUrlParam] : null
+);
 
 /*
 used when shop-date was an array

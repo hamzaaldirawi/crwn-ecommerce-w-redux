@@ -101,3 +101,6 @@
    - Add SHOP_DATA to firestore
 
    - Add SHOP_DATA from firestore to the App and insert it to reducer 
+
+   - Modify shop component and to use withSpinner that takes is Loading becasue we used async fetch in SHOP_DATA from db 
+   
