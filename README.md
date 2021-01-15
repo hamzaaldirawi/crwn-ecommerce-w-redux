@@ -104,3 +104,12 @@
 
    - Modify shop component and to use withSpinner that takes is Loading becasue we used async fetch in SHOP_DATA from db 
    
+   - Install Redux-thunk using: 
+	 ```
+	 npm install --save-dev redux-thunk
+	 ```
+   
+   - Redux-thunk to handle async dispatch, and to create function action, and type in redux to move function we want to use more than 1 time to actions, we use it in "store.js"
+
+   - Break down shop page component to 2 containers using container pattern, HOC is good because we pass props to component instead of render.
+

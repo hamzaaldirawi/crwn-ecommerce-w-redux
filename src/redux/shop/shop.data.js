@@ -1,7 +1,3 @@
-// we switched it from array to object to use data normalization 
-// and to update shop selector to select UrlParam directly instead of using find which takes too long time if we have 
-// an array of 1000s
-
 const SHOP_DATA = {
   'hats':{
       id: 1,
