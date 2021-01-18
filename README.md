@@ -119,3 +119,5 @@
 	 ```
 
    - Use saga to handle Sign in, sign up and user auth.
+
+   - Update the app component, sign in component, sign up component to use Hooks: using useState, useEffect.
