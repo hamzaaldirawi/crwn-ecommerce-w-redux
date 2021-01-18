@@ -113,3 +113,9 @@
 
    - Break down shop page component to 2 containers using container pattern, HOC is good because we pass props to component instead of render.
 
+   - Install redux saga 
+     ```
+	 npm install --save-dev redux-saga
+	 ```
+
+   - Use saga to handle Sign in, sign up and user auth.
