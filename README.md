@@ -126,12 +126,12 @@
 
    - Install nodemon for backened server 
       ```
-      npm i -g nodemon 
+      npm install nodemon --save-dev 
       ```
 
    - Install nodemon for backened server 
       ```
-      npm install -g concurrently
+      npm install --save-dev concurrently
       ```
    
    - Write package.json file for backend side.
