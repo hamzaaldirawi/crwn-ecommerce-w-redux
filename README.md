@@ -121,3 +121,25 @@
    - Use saga to handle Sign in, sign up and user auth.
 
    - Update the app component, sign in component, sign up component to use Hooks: using useState, useEffect.
+
+   - Seperate folder to create a backend and frontend for the app.
+
+   - Install nodemon for backened server 
+      ```
+      npm i -g nodemon 
+      ```
+
+   - Install nodemon for backened server 
+      ```
+      npm install -g concurrently
+      ```
+   
+   - Write package.json file for backend side.
+
+   - Configure server.js backend side, to accept payment from stripe.
+
+   - install axios in client side(front end), to fetch data between frontend to backend (used for Stripe payment)
+      ```
+      npm install axios --save-dev
+      ```
+   
