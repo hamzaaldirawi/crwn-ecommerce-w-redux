@@ -142,4 +142,5 @@
       ```
       npm install axios --save-dev
       ```
-   
+
+   - Add media query - Mobile responsive    
