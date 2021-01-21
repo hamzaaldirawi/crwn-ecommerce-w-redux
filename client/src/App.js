@@ -1,4 +1,3 @@
-import './App.css';
 import { useEffect } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'; 
@@ -13,6 +12,9 @@ import CheckoutPage from './pages/checkout/checkout.component';
 import { selectCurrentUser } from './redux/user/user-selectors';
 import { checkUserSession } from './redux/user/user-actions';
 
+import { GlobalStyle } from './global.styles';
+
+
 const App = ({checkUserSession, currentUser}) => {
   useEffect(() => {
     checkUserSession()
@@ -20,6 +22,7 @@ const App = ({checkUserSession, currentUser}) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
