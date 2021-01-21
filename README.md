@@ -144,3 +144,5 @@
       ```
 
    - Add media query - Mobile responsive    
+
+   - Use lazy and Suspense from react to speed website, and errorboundary
