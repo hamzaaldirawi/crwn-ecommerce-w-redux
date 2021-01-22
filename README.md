@@ -153,3 +153,5 @@
       ```
 
    - Use memo and pureComponent for perfomance
+
+   - Add Profiler to homepage to check component actualDuration and phase.
