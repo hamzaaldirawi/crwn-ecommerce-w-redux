@@ -145,4 +145,6 @@
 
    - Add media query - Mobile responsive    
 
-   - Use lazy and Suspense from react to speed website, and errorboundary
+   - Use lazy and Suspense from react to speed website, and errorboundary in case any error ocurred 
+
+   - Use memo and pureComponent for perfomance
