@@ -147,4 +147,9 @@
 
    - Use lazy and Suspense from react to speed website, and errorboundary in case any error ocurred 
 
+   - Install compression to use gzip to compress files, used in server.js file : 
+      ```
+      npm install compression
+      ```
+
    - Use memo and pureComponent for perfomance
