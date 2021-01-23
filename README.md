@@ -155,3 +155,9 @@
    - Use memo and pureComponent for perfomance
 
    - Add Profiler to homepage to check component actualDuration and phase.
+
+   - Install express sslify to support https 
+      ```
+      npm install express-sslify --save
+      ```
+      
