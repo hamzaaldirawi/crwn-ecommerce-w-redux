@@ -160,4 +160,7 @@
       ```
       npm install express-sslify --save
       ```
-      
+   
+   - Add serviceWorker, and convert the app to PWA
+
+   - Secure firebase, and add Cart to firestore to check cart when user sign in
